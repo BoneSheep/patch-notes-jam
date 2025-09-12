@@ -1,9 +1,44 @@
-[gd_scene load_steps=2 format=3 uid="uid://cjo82jjgns1aa"]
+[gd_scene load_steps=3 format=3 uid="uid://cjo82jjgns1aa"]
 
 [ext_resource type="Script" uid="uid://bexo5wnywhu36" path="res://scripts/mail_window.gd" id="1_rvd7j"]
+[ext_resource type="Script" uid="uid://clr48cbrqege8" path="res://UI/mailClient/button.gd" id="2_eb2cd"]
 
 [node name="MailWindow" type="Window"]
 title = "Mail"
 position = Vector2i(100, 100)
 size = Vector2i(300, 200)
 script = ExtResource("1_rvd7j")
+
+[node name="SubViewportContainer" type="SubViewportContainer" parent="."]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="SubViewport" type="SubViewport" parent="SubViewportContainer"]
+handle_input_locally = false
+render_target_update_mode = 4
+
+[node name="Label" type="Label" parent="SubViewportContainer/SubViewport"]
+offset_left = 40.0
+offset_top = 40.0
+offset_right = 80.0
+offset_bottom = 63.0
+text = "text:"
+
+[node name="Button" type="Button" parent="SubViewportContainer/SubViewport"]
+offset_left = 35.0
+offset_top = 158.0
+offset_right = 82.0
+offset_bottom = 189.0
+text = "Send"
+script = ExtResource("2_eb2cd")
+
+[node name="TextEdit" type="LineEdit" parent="SubViewportContainer/SubViewport"]
+custom_minimum_size = Vector2(200, 10)
+offset_left = 37.0
+offset_top = 88.0
+offset_right = 105.563
+offset_bottom = 119.0
+placeholder_text = "write mail
+"
+
+[connection signal="pressed" from="SubViewportContainer/SubViewport/Button" to="SubViewportContainer/SubViewport/Button" method="_on_pressed"]
