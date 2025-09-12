@@ -17,23 +17,23 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_my12u")
 
-[node name="GridContainer" type="GridContainer" parent="."]
+[node name="AppContainer" type="GridContainer" parent="."]
 custom_minimum_size = Vector2(80, 80)
 layout_mode = 0
 offset_left = 20.0
 offset_top = 20.0
-offset_right = 60.0
-offset_bottom = 60.0
+offset_right = 100.0
+offset_bottom = 200.0
 theme_override_constants/h_separation = 20
 theme_override_constants/v_separation = 20
 
-[node name="AppButton" parent="GridContainer" instance=ExtResource("2_x0l4i")]
+[node name="AppButton" parent="AppContainer" instance=ExtResource("2_x0l4i")]
 layout_mode = 2
 theme_override_styles/hover = SubResource("StyleBoxTexture_qcmjx")
 theme_override_styles/normal = SubResource("StyleBoxTexture_qcmjx")
 text = "game"
 
-[node name="AppButton2" parent="GridContainer" instance=ExtResource("2_x0l4i")]
+[node name="AppButton2" parent="AppContainer" instance=ExtResource("2_x0l4i")]
 layout_mode = 2
 text = "mail"
 app_title = "Mail"
