@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://ccsxfofyyy452"]
+[gd_scene load_steps=3 format=3 uid="uid://ccsxfofyyy452"]
 
 [ext_resource type="Script" uid="uid://cghscdftgyy2p" path="res://scripts/game_window.gd" id="1_r6oxh"]
+[ext_resource type="Script" uid="uid://bibivbh518klm" path="res://scripts/test_script_for_viewport.gd" id="2_8sw0n"]
 
 [node name="GameWindow" type="Window"]
 position = Vector2i(200, 200)
@@ -13,3 +14,20 @@ offset_bottom = 40.0
 [node name="SubViewport" type="SubViewport" parent="SubViewportContainer"]
 handle_input_locally = false
 render_target_update_mode = 4
+
+[node name="Button" type="Button" parent="SubViewportContainer/SubViewport"]
+offset_left = 20.0
+offset_top = 20.0
+offset_right = 91.0
+offset_bottom = 51.0
+text = "click me"
+script = ExtResource("2_8sw0n")
+
+[node name="Label" type="Label" parent="SubViewportContainer/SubViewport"]
+offset_left = 40.0
+offset_top = 40.0
+offset_right = 80.0
+offset_bottom = 63.0
+text = "0"
+
+[connection signal="pressed" from="SubViewportContainer/SubViewport/Button" to="SubViewportContainer/SubViewport/Button" method="_on_pressed"]
