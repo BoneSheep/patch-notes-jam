@@ -1,13 +1,11 @@
-[gd_scene load_steps=3 format=3 uid="uid://cjo82jjgns1aa"]
+[gd_scene load_steps=2 format=3 uid="uid://cjo82jjgns1aa"]
 
-[ext_resource type="StyleBox" uid="uid://d1efvb7fjraxj" path="res://UI/app/styleBoxTextures/new_style_box_texture.tres" id="1_eb2cd"]
 [ext_resource type="Script" uid="uid://bexo5wnywhu36" path="res://scripts/mail_window.gd" id="1_rvd7j"]
 
 [node name="MailWindow" type="Window"]
 title = "Mail"
 position = Vector2i(100, 66)
 size = Vector2i(800, 450)
-theme_override_styles/embedded_border = ExtResource("1_eb2cd")
 script = ExtResource("1_rvd7j")
 
 [node name="SubViewportContainer" type="SubViewportContainer" parent="."]
