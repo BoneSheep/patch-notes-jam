@@ -2,11 +2,13 @@
 
 [ext_resource type="Script" uid="uid://dwqsga26c7ie6" path="res://scripts/desktop.gd" id="1_my12u"]
 [ext_resource type="PackedScene" uid="uid://bc05bcrqxhvvb" path="res://UI/app/app_button.tscn" id="2_x0l4i"]
-[ext_resource type="Texture2D" uid="uid://cvqydpcsjeajn" path="res://svgs/chef-man-cap-svgrepo-com.svg" id="3_uh226"]
 [ext_resource type="PackedScene" uid="uid://cjo82jjgns1aa" path="res://UI/mailClient/mail_window.tscn" id="4_qcmjx"]
 
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_uh226"]
+load_path = "res://.godot/imported/chef-man-cap-svgrepo-com.svg-5497a7b14db10399b746934fe450a4e6.ctex"
+
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_qcmjx"]
-texture = ExtResource("3_uh226")
+texture = SubResource("CompressedTexture2D_uh226")
 
 [node name="Desktop" type="Control"]
 layout_mode = 3
