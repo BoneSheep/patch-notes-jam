@@ -14,6 +14,7 @@ size_flags_vertical = 3
 script = ExtResource("1_2xg8h")
 
 [node name="Panel" type="Panel" parent="."]
+visible = false
 modulate = Color(1, 1, 1, 0.258824)
 z_index = -1
 layout_mode = 1

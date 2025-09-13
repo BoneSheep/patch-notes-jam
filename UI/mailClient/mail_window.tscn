@@ -1,11 +1,13 @@
-[gd_scene load_steps=2 format=3 uid="uid://cjo82jjgns1aa"]
+[gd_scene load_steps=3 format=3 uid="uid://cjo82jjgns1aa"]
 
+[ext_resource type="Theme" uid="uid://cu1yfhvb17bn2" path="res://UI/base_theme.tres" id="1_alpt6"]
 [ext_resource type="Script" uid="uid://bexo5wnywhu36" path="res://scripts/mail_window.gd" id="1_rvd7j"]
 
 [node name="MailWindow" type="Window"]
 title = "Mail"
-position = Vector2i(100, 66)
+position = Vector2i(100, 36)
 size = Vector2i(800, 450)
+theme = ExtResource("1_alpt6")
 script = ExtResource("1_rvd7j")
 
 [node name="SubViewportContainer" type="SubViewportContainer" parent="."]
