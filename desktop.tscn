@@ -5,7 +5,6 @@
 [ext_resource type="PackedScene" uid="uid://cjo82jjgns1aa" path="res://UI/mailClient/mail_window.tscn" id="4_qcmjx"]
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_uh226"]
-load_path = "res://.godot/imported/chef-man-cap-svgrepo-com.svg-5497a7b14db10399b746934fe450a4e6.ctex"
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_qcmjx"]
 texture = SubResource("CompressedTexture2D_uh226")
