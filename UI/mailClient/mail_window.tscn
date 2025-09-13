@@ -67,11 +67,11 @@ text = "Junk mail"
 layout_mode = 2
 text = "Draft"
 
-[node name="Button" type="Button" parent="SubViewportContainer/SubViewport/Control/HSplitContainer/Panel/VBoxContainer"]
+[node name="SendItems" type="Button" parent="SubViewportContainer/SubViewport/Control/HSplitContainer/Panel/VBoxContainer"]
 layout_mode = 2
 text = "Send items"
 
-[node name="Button2" type="Button" parent="SubViewportContainer/SubViewport/Control/HSplitContainer/Panel/VBoxContainer"]
+[node name="Deleted" type="Button" parent="SubViewportContainer/SubViewport/Control/HSplitContainer/Panel/VBoxContainer"]
 layout_mode = 2
 text = "Deleted"
 

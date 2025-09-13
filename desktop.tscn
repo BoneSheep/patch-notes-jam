@@ -1,4 +1,4 @@
-[gd_scene load_steps=19 format=3 uid="uid://cnbtjtgn6q7g1"]
+[gd_scene load_steps=20 format=3 uid="uid://cnbtjtgn6q7g1"]
 
 [ext_resource type="Script" uid="uid://dwqsga26c7ie6" path="res://scripts/desktop.gd" id="1_my12u"]
 [ext_resource type="Theme" uid="uid://cu1yfhvb17bn2" path="res://UI/base_theme.tres" id="1_otlag"]
@@ -9,7 +9,8 @@
 [ext_resource type="Texture2D" uid="uid://dgwo085cnkq3d" path="res://images/mail_icon.png" id="4_ed6rk"]
 [ext_resource type="PackedScene" uid="uid://cjo82jjgns1aa" path="res://UI/mailClient/mail_window.tscn" id="4_qcmjx"]
 [ext_resource type="Texture2D" uid="uid://bdp8314iplxjv" path="res://images/mail_icon_2.png" id="7_kjnmq"]
-[ext_resource type="PackedScene" path="res://UI/app/player_mouse.tscn" id="8_cmsrr"]
+[ext_resource type="PackedScene" uid="uid://c48bpyq4l8n7j" path="res://UI/app/player_mouse.tscn" id="8_cmsrr"]
+[ext_resource type="PackedScene" uid="uid://bjkomkeaapmhs" path="res://devTools/corruption_slider.tscn" id="10_6f7av"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_otlag"]
 texture = ExtResource("4_6lsg3")
@@ -88,5 +89,13 @@ WINDOW = ExtResource("4_qcmjx")
 anchors_preset = 0
 offset_right = 40.0
 offset_bottom = 40.0
+
+[node name="tempDevTools" type="Control" parent="."]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="CorruptionSlider" parent="tempDevTools" instance=ExtResource("10_6f7av")]
+layout_mode = 1
 
 [node name="PlayerMouse" parent="." instance=ExtResource("8_cmsrr")]

@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://cyt7266awfns8" path="res://images/player/player_idle_2.png" id="3_7hary"]
 [ext_resource type="Texture2D" uid="uid://c8fvjq5mdusnu" path="res://images/player/player_jump.png" id="3_onxs0"]
 [ext_resource type="Texture2D" uid="uid://y2h2ksrnp6hq" path="res://images/player/player_walk_1.png" id="4_7hary"]
-[ext_resource type="Texture2D" uid="uid://bajy4gpkrxvc1" path="res://images/player/player_idle_1.png" id="4_mqt2r"]
+[ext_resource type="Texture2D" uid="uid://da6qvbrwy2nn5" path="res://images/player/player_idle_1.png" id="4_mqt2r"]
 [ext_resource type="AudioStream" uid="uid://ccm0uj073j14a" path="res://audio/jump.wav" id="6_mqt2r"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_5vjwt"]
